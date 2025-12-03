@@ -1,0 +1,27 @@
+{
+  "chat_id": "2cf5a667-d7ee-4ea0-9327-2e0cda417a62",
+  "created_at": "2025-05-04T21:48:44.666817+00:00",
+  "title": "Hello, Is this the admission chatpbot?",
+  "messages": [
+    {
+      "sender": "user",
+      "message": "Hello, Is this the admission chatpbot?",
+      "timestamp": "2025-05-04T21:49:19.543522+00:00"
+    },
+    {
+      "sender": "bot",
+      "message": "Hello! How can I assist you with your college admission questions today?",
+      "timestamp": "2025-05-04T21:49:49.384558+00:00"
+    },
+    {
+      "sender": "user",
+      "message": "I want to register for a course.",
+      "timestamp": "2025-05-04T21:50:18.074503+00:00"
+    },
+    {
+      "sender": "bot",
+      "message": "Our popular programs include Engineering, Business, Computer Science, Nursing, and Liberal Arts. For a full list, please visit the 'Academics' section of our website.",
+      "timestamp": "2025-05-04T21:50:18.971541+00:00"
+    }
+  ]
+}

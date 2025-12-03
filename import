@@ -1,0 +1,8 @@
+Usage: nltk [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --version   Show the version and exit.
+  -h, --help  Show this message and exit.
+
+Commands:
+  tokenize  This command tokenizes text stream using nltk.word_tokenize

@@ -1,0 +1,6 @@
+# requirements.txt
+Flask
+nltk
+numpy
+tensorflow-cpu
+requests # Good to have, though not used in this core version

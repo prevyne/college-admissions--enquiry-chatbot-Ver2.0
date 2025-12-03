@@ -1,0 +1,17 @@
+{
+  "chat_id": "2ae70cd8-667f-4d68-8dd3-0c0b45e17dbb",
+  "created_at": "2025-05-04T21:50:40.917589+00:00",
+  "title": "When is the application deadline?",
+  "messages": [
+    {
+      "sender": "user",
+      "message": "When is the application deadline?",
+      "timestamp": "2025-05-04T22:05:03.945531+00:00"
+    },
+    {
+      "sender": "bot",
+      "message": "The application deadline for Fall admission is typically January 15th for regular decision and November 1st for early action. Please verify on the official admissions calendar on our website as dates can change.",
+      "timestamp": "2025-05-04T22:05:04.723533+00:00"
+    }
+  ]
+}
