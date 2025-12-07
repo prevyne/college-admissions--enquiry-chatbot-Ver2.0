@@ -1,0 +1,37 @@
+{
+  "chat_id": "1f6d7a85-2904-4d70-a69c-6dfedfe4b38a",
+  "created_at": "2025-12-07T10:54:23.480279+00:00",
+  "title": "Hello",
+  "messages": [
+    {
+      "sender": "user",
+      "message": "Hello",
+      "timestamp": "2025-12-07T10:54:23.480697+00:00"
+    },
+    {
+      "sender": "bot",
+      "message": "Hi there! Ask me about courses or deadlines.",
+      "timestamp": "2025-12-07T10:54:23.481505+00:00"
+    },
+    {
+      "sender": "user",
+      "message": "When is the graduation?",
+      "timestamp": "2025-12-07T10:54:33.565675+00:00"
+    },
+    {
+      "sender": "bot",
+      "message": "Graduation is typically held in mid-May for the Spring semester and mid-December for the Fall semester.",
+      "timestamp": "2025-12-07T10:54:38.390721+00:00"
+    },
+    {
+      "sender": "user",
+      "message": "Okay, when are the exams?",
+      "timestamp": "2025-12-07T10:55:05.781857+00:00"
+    },
+    {
+      "sender": "bot",
+      "message": "Hello! How can I assist you with your college admission questions today?",
+      "timestamp": "2025-12-07T10:55:05.864617+00:00"
+    }
+  ]
+}

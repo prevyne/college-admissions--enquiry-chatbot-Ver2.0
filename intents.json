@@ -1,55 +1,47 @@
-
 {
   "intents": [
     {
       "tag": "greeting",
-      "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good evening", "Is anyone there?", "Sup"],
-      "responses": ["Hello! How can I assist you with your college admission questions today?", "Hi there, welcome! Ask me anything about admissions.", "Hey! Happy to help with your admission queries."]
+      "patterns": ["Hi", "Hello", "Hey", "Good morning", "Is anyone there?"],
+      "responses": ["Hello! How can I assist you with your college admission questions today?"]
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye", "Ok bye", "Farewell"],
-      "responses": ["Goodbye! Feel free to reach out if you have more questions.", "Sad to see you go :(", "Talk to you later!"]
-    },
-    {
-      "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure! Do you have other questions?", "You're welcome!"]
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": ["Goodbye! Feel free to reach out if you have more questions."]
     },
     {
       "tag": "admission_requirements",
-      "patterns": ["What are the admission requirements?", "What do I need to apply?", "Application requirements", "GPA requirement", "SAT scores needed", "Minimum requirements"],
-      "responses": ["General admission requirements usually include a completed application form, high school transcripts, standardized test scores (like SAT or ACT), letters of recommendation, and a personal essay. Specific requirements might vary by program.", "You'll need to submit your high school GPA, relevant test scores (check if we are test-optional!), recommendation letters, and an essay. Visit our admissions website for detailed checklists.", "Check the 'Admissions' section on our website for the most up-to-date requirements list, including GPA and test score ranges."]
+      "patterns": ["What are the admission requirements?", "GPA requirement", "SAT scores needed"],
+      "responses": ["You'll need a completed application, high school transcripts, and standardized test scores. Check our website for specifics!"]
     },
     {
       "tag": "application_deadline",
-      "patterns": ["When is the application deadline?", "What is the due date for applications?", "Application deadline", "When do I need to apply by?", "Deadline for fall admission"],
-      "responses": ["The application deadline for Fall admission is typically January 15th for regular decision and November 1st for early action. Please verify on the official admissions calendar on our website as dates can change.", "Deadlines vary! Early Action is usually Nov 1st, Regular Decision Jan 15th. Check the admissions portal for the exact dates for your desired entry term."]
+      "patterns": ["When is the application deadline?", "due date for applications", "Deadline for fall"],
+      "responses": ["The Fall deadline is typically January 15th. Early action is November 1st."]
+    },
+    {
+      "tag": "graduation_date",
+      "patterns": ["When is the graduation day?", "graduation ceremony", "commencement date", "when do we graduate"],
+      "responses": ["Graduation is typically held in mid-May for the Spring semester and mid-December for the Fall semester."]
     },
     {
       "tag": "programs_offered",
-      "patterns": ["What programs do you offer?", "List of majors", "Available courses", "What can I study?", "Do you have a computer science program?"],
-      "responses": ["We offer a wide range of undergraduate and graduate programs! You can find a complete list on our website under 'Academics' or 'Programs'. Is there a specific field you're interested in?", "Our popular programs include Engineering, Business, Computer Science, Nursing, and Liberal Arts. For a full list, please visit the 'Academics' section of our website."]
+      "patterns": ["What programs do you offer?", "List of majors", "Available courses"],
+      "responses": ["We offer Engineering, Business, CS, and Arts. Would you like to know about a specific one?"],
+      "context_set": "program_inquiry"
+    },
+    {
+      "tag": "program_selection",
+      "patterns": ["Yes please", "Computer Science", "Engineering", "Business", "Arts", "Tell me more"],
+      "context_filter": "program_inquiry",
+      "responses": ["Great choice! Our program is top-tier. You can find the specific curriculum on the 'Academics' page."],
+      "context_set": ""
     },
     {
       "tag": "tuition_fees",
-      "patterns": ["How much is tuition?", "What are the fees?", "Cost of attendance", "Tuition cost", "How much does it cost to study here?"],
-      "responses": ["Tuition fees vary depending on the program and residency status (in-state/out-of-state). You can find the detailed fee structure on our 'Tuition and Fees' page. Remember to factor in housing, meals, and books too!", "The estimated cost of attendance, including tuition, fees, room, and board, is available on the Financial Aid section of our website. There might be scholarships and aid available too."]
-    },
-    {
-        "tag": "financial_aid",
-        "patterns": ["Do you offer financial aid?", "How to apply for financial aid?", "Scholarships", "Grants", "Student loans information"],
-        "responses": ["Yes, we offer various financial aid options including scholarships, grants, and loans. You should start by filling out the FAFSA. Visit our Financial Aid office website for deadlines and application procedures.", "Financial aid is available! Check our website for scholarship opportunities and details on applying for federal aid (FAFSA) and institutional grants."]
-    },
-    {
-        "tag": "campus_visit",
-        "patterns": ["Can I visit the campus?", "Schedule a campus tour", "Campus visit information", "Open house dates"],
-        "responses": ["We'd love to have you visit! You can schedule a campus tour through our admissions website. We also host open house events throughout the year.", "Campus tours are available on most weekdays. Check the 'Visit Us' section on our website to see the schedule and book your spot."]
-    },
-    {
-        "tag": "fallback",
-        "patterns": [],
-        "responses": ["Sorry, I didn't quite understand that. Could you please rephrase?", "I'm still learning. Can you ask that in a different way?", "I'm not sure how to respond to that. Try asking about admission requirements, deadlines, or programs."]
+      "patterns": ["How much is tuition?", "What are the fees?", "Cost of attendance"],
+      "responses": ["Tuition varies by residency. Please check the 'Tuition and Fees' page on our site."]
     }
   ]
 }

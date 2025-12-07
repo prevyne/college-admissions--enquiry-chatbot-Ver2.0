@@ -1,2 +1,4 @@
 venv/
 zorin_env/
+chat_env/
+train.py (DEPRICATED!)
